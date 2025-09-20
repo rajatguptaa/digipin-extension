@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'none';" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DIGIPIN Tools</title>
+    <style>
+      body { margin:0; background:#0a0a0a; color:#fff; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+      .wrap { width: 320px; padding: 12px; }
+      .row { display:flex; gap:8px; margin:8px 0; }
+      .grid2 { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 8px; 
+        width: 100%;
+      }
+      .grid2 input {
+        min-width: 0; /* Prevents grid items from overflowing */
+        box-sizing: border-box;
+      }
+      input { 
+        width: 100%; 
+        padding: 8px; 
+        border: 1px solid #333; 
+        border-radius: 8px; 
+        background: #181818; 
+        color: #fff; 
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      button { padding:8px 12px; border-radius:8px; border:1px solid #2f6fad; background:#64b5f6; color:#0a0a0a; font-weight:600; cursor:pointer; }
+      .chip { display:inline-block; padding:6px 10px; background:#1d2a36; border:1px solid #2f6fad; border-radius:999px; font-weight:600; }
+      .card { 
+        border: 1px solid #222; 
+        border-radius: 12px; 
+        padding: 10px; 
+        background: #121212; 
+        margin-bottom: 10px; 
+        overflow: hidden; /* Ensures content doesn't overflow */
+      }
+      .title { font-weight:700; color:#9bd0ff; margin-bottom:8px; }
+      .muted { color:#b0b0b0; font-size:12px; }
+      .link { color:#9bd0ff; text-decoration:none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html> 

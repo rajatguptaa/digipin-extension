@@ -1,0 +1,27 @@
+{
+  "name": "digipin-extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "icons": "node scripts/gen-icons.mjs",
+    "promo:small": "node scripts/gen-promo.mjs",
+    "build:extension": "npm run build && mkdir -p dist/popup && cp dist/src/popup/index.html dist/popup/",
+    "zip": "npm run build:extension && cd dist && zip -r ../digipin-extension.zip . && cd .."
+  },
+  "dependencies": {
+    "digipinjs": "^1.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "sharp": "^0.34.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#0a1a33"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="440" height="280" fill="url(#bg)"/>
+
+  <!-- Brand block (reuses icon styling) -->
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="160" height="160" rx="28" ry="28" fill="url(#brand)"/>
+    <g filter="url(#shadow)">
+      <path d="M80 28c-32 0-58 26-58 58 0 43 58 92 58 92s58-49 58-92c0-32-26-58-58-58zm0 82a22 22 0 1 1 0-44 22 22 0 0 1 0 44z" fill="#fff"/>
+    </g>
+    <text x="80" y="140" text-anchor="middle" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif" font-weight="800" font-size="28" fill="#0f172a">DP</text>
+  </g>
+
+  <!-- Text area -->
+  <g transform="translate(220,92)">
+    <text font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif"
+          font-size="34" font-weight="800" fill="#e6f2ff">DIGIPIN Tools</text>
+    <text y="42" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif"
+          font-size="18" font-weight="500" fill="#a8c7ff">Encode/Decode coordinates • Right-click conversion</text>
+  </g>
+</svg>
+
